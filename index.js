@@ -19,15 +19,6 @@ const server = http.createServer((req, res) => {
     }
   }
 
-  if (path === "/about") {
-    {
-      fs.readFile("about.html", "utf-8", (err, data) => {
-        res.write(data);
-        return res.end();
-      });
-    }
-  }
-
   if (path === "/contact-me") {
     {
       fs.readFile("contact-me.html", "utf-8", (err, data) => {
